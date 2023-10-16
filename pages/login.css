@@ -1,0 +1,22 @@
+header {
+    background-image: url("../asset/river.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 4rem;
+    background-color: rgba(0,0,0,7);
+}
+
+.login-background {
+    background-color: var(--primary-bg-color);
+}
+
+form {
+    width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,114 @@
+:root {
+  --primary-bg-color: #3D619C;
+  --secondary-bg-color: #102533;
+  --third-bg-color: #163E4F;
+  --text-bg-color: white;
+  --yellow-color: #F3B916;
+  --dark-bg-color: #212529;
+  --nav-bg: #133647;
+  --brand: white;
+  --text-shadow:#3D619C;
+}
+
+[data-theme="dark"] {
+  --primary-bg-color: #286FB4;
+  --secondary-bg-color: #B0DDE4;
+  --third-bg-color: orange;
+  --text-bg-color: #F8444F;
+  --yellow-color: orange;
+  --dark-bg-color: white;
+  --nav-bg: white;
+  --brand: black;
+  --text-shadow: white;
+}
+
+.create-blog-header {
+  background-image: url("../asset/river.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 4rem;
+  background-color: rgba(0,0,0,7);
+}
+
+.form-container {
+  background-color: var(--dark-bg-color);
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+#contentDetails {
+  display:block;
+  color: black;
+}
+
+#tags {
+  border-radius:0.5rem; 
+  padding:0.25rem;
+}
+
+#tags:focus {
+outline:0;
+border-color: var(--primary-bg-color);
+}
+
+/*List Section */
+.list {
+  list-style-type: none;
+  margin-bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.list li {
+  background-color: white;
+  border-radius:0.5rem;
+  color: #333;
+  margin-left:0.5rem;
+}
+
+.list li span {
+  padding-left: 0.5rem;
+}
+
+.delete-btn {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  color: white;
+  background-color: #D93444;
+  padding: 0.5rem;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0;
+  border:0;
+}
+
+
+@media only screen and (max-width: 576px) {
+  #tag-show {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #tag-show button {
+    max-width: 5rem;
+  }
+
+  .list {
+    padding-left: 0;
+    margin-left: -0.5rem;
+  }
+
+  .list li {
+    margin-top: 1rem;
+  }
+}
+
+/* @media only screen and (max-height: 735px) {
+
+  .header {
+    height: 160vh !important;
+  }
+  .write-post {
+    margin-top: 0;
+  }
+} */
