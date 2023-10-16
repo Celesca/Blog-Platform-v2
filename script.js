@@ -33,10 +33,18 @@ const blog_number = document.getElementById('blog-number');
 const visitor_number = document.getElementById('visitor-number');
 const current_number = document.getElementById('current-number');
 
-async function LoadStatics() {
-  const res = await fetch('../data/static.json')
-  const staticData = await res.json();
-  console.log(staticData)
+function LoadStatics() {
+    const staticData = {
+        "statistics": {
+          "totalBlogs": 10,
+          "totalViews": 10279,
+          "currentVisitors": 25
+        }
+      }
+    // const res = await fetch('https://github.com/Celesca/Blog-Platform-v2/blob/main/data/static.json')
+    // const staticData = await res.json();
+    // console.log(staticData)
+    
   blog_number.textContent = `${staticData.statistics.totalBlogs}`
   visitor_number.textContent = `${staticData.statistics.totalViews}`
   current_number.textContent = `${staticData.statistics.currentVisitors}`
